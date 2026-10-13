@@ -1,0 +1,55 @@
+/* 電卓全体の枠組み */
+.calculator {
+  width: 400px;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* 一番上の黒いディスプレイ（右寄せ） */
+#display {
+  background-color: #231f20;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+/* ボタンを4列のグリッド状に並べる */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+/* ボタンの共通デザイン */
+.btn {
+  background-color: #eeeeee;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* ACボタンと＝ボタンをそれぞれ2列分の幅にする */
+#clearBtn, #equalBtn {
+  grid-column: span 2;
+}
+
+/* 電卓の全ボタンに適用 */
+.num-btn, .op-btn, #clearBtn, #equalBtn, button {
+  outline: none;
+  cursor:default; 
+}
+
+/* ボタンをマウスで押している間だけ青線にする */
+.num-btn:active, 
+.op-btn:active, 
+#clearBtn:active, 
+#equalBtn:active,
+button:focus {
+  outline: 2px solid #007bff !important;
+  outline-offset: -2px;
+}

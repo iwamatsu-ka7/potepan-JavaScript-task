@@ -1,0 +1,25 @@
+h3 {
+  font-size: 2rem;
+}
+
+#display {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+.stopwatch {
+  margin-left: 20px;
+}
+
+.nmb {
+  font-size: 3rem;
+}
+
+.btn {
+  background-color: #eeeeee;
+  border: 1px solid #000000;
+  border-radius: 5px; /* 角丸 */
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: default;
+}

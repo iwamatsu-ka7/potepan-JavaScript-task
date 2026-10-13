@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>電卓</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h3>電卓</h3>
+
+    <div class="calculator">
+
+    <div id="display">0</div>
+
+    <!-- ボタン -->
+     <div class="buttons">
+    <!-- 1行目 -->
+      <button class="btn num-btn" data-val="7">7</button>
+      <button class="btn num-btn" data-val="8">8</button>
+      <button class="btn num-btn" data-val="9">9</button>
+      <button class="btn op-btn" data-val="+">+</button>
+
+    <!-- 2行目 -->
+      <button class="btn num-btn" data-val="4">4</button>
+      <button class="btn num-btn" data-val="5">5</button>
+      <button class="btn num-btn" data-val="6">6</button>
+      <button class="btn op-btn" data-val="-">-</button>
+
+    <!-- 3行目 -->
+      <button class="btn num-btn" data-val="1">1</button>
+      <button class="btn num-btn" data-val="2">2</button>
+      <button class="btn num-btn" data-val="3">3</button>
+      <button class="btn op-btn" data-val="*">*</button>
+
+    <!-- 4行目 -->
+      <button class="btn num-btn" data-val="0">0</button>
+      <button class="btn num-btn" data-val="00">00</button>
+      <button class="btn num-btn" data-val=".">.</button>
+      <button class="btn op-btn" data-val="/">/</button>
+
+    <!-- 5行目-->
+      <button class="btn" id="clearBtn">AC</button>
+      <button class="btn" id="equalBtn">=</button>
+    
+    </div>
+    
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
